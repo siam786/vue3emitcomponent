@@ -17,9 +17,9 @@
 
 <script setup>
 import { defineEmits, defineProps } from "vue";
-//defineProps(["parent"]);
+defineProps(["parent"]);
 const emit = defineEmits();
 const emitMessage = () => {
-  emit("childMsg", "hello from child component");
+  emit("childMsg", "Hello from Child Component");
 };
 </script>

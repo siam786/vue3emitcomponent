@@ -6,10 +6,14 @@
       Parent Component
     </h1>
     <p class="p-4 text-lg text-white">
-      Child Component Message:
-      <span class="font-bold text-red">{{
-        emitMessage == false ? parentMessage : emitMessage
-      }}</span>
+      {{
+        emitMessage == false
+          ? "Parent Component Message:"
+          : "Child Component Message:"
+      }}
+      <span class="font-bold text-red-400">
+        {{ emitMessage == false ? parentMessage : emitMessage }}
+      </span>
     </p>
   </div>
   <div class="p-4">
@@ -20,7 +24,7 @@
 <script setup>
 import { ref } from "vue";
 import ChildComponent from "./ChildComponent.vue";
-const parentMessage = ref("Hello from parent message");
+const parentMessage = ref("Hello from parent Component message");
 const emitMessage = ref("");
 const handleMsg = (msg) => {
   emitMessage.value = msg;
