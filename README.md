@@ -5,7 +5,7 @@ This simple Vue.js 3 Component Interaction
 
 ## Live Link
 
-- [@Live Link]()
+- [@Live Link](https://vue3emitcomponent.vercel.app/)
 
 
 ## Screenshots
