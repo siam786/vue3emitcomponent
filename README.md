@@ -10,5 +10,5 @@ This simple Vue.js 3 Component Interaction
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/FbG1TCy/Screenshot-1.png)
+![App Screenshot](https://i.ibb.co/s1rXtZM/Screenshot-1.png)
 
