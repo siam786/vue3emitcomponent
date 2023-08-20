@@ -24,7 +24,7 @@
 <script setup>
 import { ref } from "vue";
 import ChildComponent from "./ChildComponent.vue";
-const parentMessage = ref("Hello from parent Component message");
+const parentMessage = ref("Parent Component");
 const emitMessage = ref("");
 const handleMsg = (msg) => {
   emitMessage.value = msg;

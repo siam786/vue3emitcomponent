@@ -5,10 +5,12 @@
     <h1 class="p-4 text-4xl font-bold text-left text-white rounded-lg">
       Child Component
     </h1>
-
+    <p class="p-4 text-lg text-white">{{ msg }}</p>
     <button
       class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
-      @click="emitMessage"
+      @click="
+        $emit('childMsg', `Hello from Child Component & data from ${msg}`)
+      "
     >
       show message
     </button>
@@ -17,9 +19,7 @@
 
 <script setup>
 import { defineEmits, defineProps } from "vue";
-defineProps(["parent"]);
-const emit = defineEmits();
-const emitMessage = () => {
-  emit("childMsg", "Hello from Child Component");
-};
+defineProps(["msg"]);
+defineEmits(["childMsg"]);
+
 </script>
